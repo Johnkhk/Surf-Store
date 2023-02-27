@@ -8,7 +8,9 @@ There is a MetaStore for and a BlockStore service.
 The MetaStore service manages the metadata of files and the entire system. Most importantly, the MetaStore service holds the mapping of filenames to blocks. Furthermore, it should be aware of available BlockStores and map blocks to particular BlockStores.  In a real deployment, a cloud file service like Dropbox or Google Drive will hold exabytes of data, and so will require 10s of thousands of BlockStores or more to hold all that data.
 ### BlockStore ###
 The content of each file in SurfStore is divided up into chunks, or blocks, each of which has a unique identifier. This service stores these blocks, and when given an identifier, retrieves and returns the appropriate block.
-
+<p align="center">
+<img src="misc/surfsto.png" alt="isolated" width="600"/>
+</p>
 ## How to use Surf Store? ##
 1. Download and Install Go https://go.dev/doc/install
 2. Download plugins for gRPC
