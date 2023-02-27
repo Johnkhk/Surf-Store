@@ -21,7 +21,8 @@ The content of each file in SurfStore is divided up into chunks, or blocks, each
       3. You can also use **make run-both**
 4. Then run client (Sync)
    1. Once you create a folder (e.g dataA), provide a path to that folder to sync
-   2. Before you sync to the server, you can modify or delete the file. For multiple clients, syncing will be based on versioning.
-   3. go run cmd/SurfstoreClientExec/main.go server_addr:port &lt;folder path> &lt;port>
-      1. go run cmd/SurfstoreClientExec/main.go localhost:8081 dataA 4096
-      2. go run cmd/SurfstoreClientExec/main.go localhost:8081 dataB 4096
+   2. Before you sync to the server, you can modify or delete files. For multiple clients, syncing will be based on versioning.
+   3. go run cmd/SurfstoreClientExec/main.go server_addr:port &lt;folder path> &lt;blockSize>
+      1. blockSize is how big are the blocks in bytes for the data.
+      2. e.g go run cmd/SurfstoreClientExec/main.go localhost:8081 dataA 4096
+      3. e.g go run cmd/SurfstoreClientExec/main.go localhost:8081 dataB 4096
