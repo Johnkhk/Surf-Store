@@ -11,6 +11,7 @@ The content of each file in SurfStore is divided up into chunks, or blocks, each
 <p align="center">
 <img src="misc/surfsto.png" alt="isolated" width="600"/>
 </p>
+
 ## How to use Surf Store? ##
 1. Download and Install Go https://go.dev/doc/install
 2. Download plugins for gRPC
